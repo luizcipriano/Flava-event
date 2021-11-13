@@ -22,6 +22,9 @@ u {
   text-decoration-color: #feba08;
   text-decoration-style: wavy;
 }
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
 .front-page {
   width: 100%;
   height: 100vh;
@@ -36,7 +39,9 @@ u {
   height: 100%;
   object-fit: cover;
 }
-
+.main-color {
+  color: #feba08 !important;
+}
 .intro-text,
 .music-note {
   position: absolute;
@@ -57,21 +62,22 @@ u {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: #dda109;
+  background: #493501;
   opacity: 0.3;
 }
 .title {
   font-size: 3rem;
   padding-bottom: 1rem;
+  color: #fff;
 }
 .sub-title {
   font-size: 1.5rem;
+  color: #fff;
 }
 .second-page {
   height: 100vh;
 }
 .intro-text {
-  background: #5555;
   padding: 1rem;
 }
 /* NAV BAR */
@@ -89,6 +95,34 @@ u {
 }
 .create-acc {
   outline: 1px solid #feba08;
+  outline-offset: -2px;
+  transition: outline-width 200ms ease, outline-offset 200ms ease;
+}
+.create-acc:hover,
+.create-acc:focus {
+  outline: 1px solid #feba08;
+  outline-width: 8px;
+  outline-offset: -8px;
+}
+/* SECOND_PAGE */
+.second-page {
+  position: relative;
+}
+.btn-buy {
+  text-decoration: none;
+  color: #000;
+  padding: 15px 25px;
+  background: #feba08;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  border: 2px solid #feba08;
+  transition: background 200ms ease, color 200ms ease;
+}
+.btn-buy:hover,
+.btn-buy:focus {
+  color: #feba08;
+  background: transparent;
+  border: 2px solid #feba08;
 }
 /* TIMER */
 .countdown-container {
@@ -96,11 +130,10 @@ u {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 10%;
 }
 .big-text {
   font-weight: bold;
-  font-size: 6rem;
+  font-size: 4.5rem;
   line-height: 1;
   margin: 1rem 2rem;
 }
@@ -109,9 +142,6 @@ u {
 }
 .countdown-el span {
   font-size: 1.3rem;
-}
-.second-page {
-  position: relative;
 }
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
@@ -126,3 +156,4 @@ u {
     margin-top: 0;
   }
 }
+/* @media (max) */

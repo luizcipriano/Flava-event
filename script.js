@@ -8,15 +8,27 @@ let tl = gsap.timeline({
     }
 })
 
-tl.fromTo(".front-page",
-{clipPath: "circle(5%)"},
-{clipPath: "circle(75%)", duration: 3 }
-);
-tl.fromTo('.music-note', {scale: 0.5}, {scale: 0, opacity: 0, duration: 1 ,}, "-=3"
-);
-
-tl.fromTo('.content', {opacity: 0 }, {opacity: 1, duration: 1 });
-tl.fromTo('.nav-effect', {opacity: 0 }, {opacity: 1, duration: 1 });
+if (window.matchMedia("(max-width: 990px)").matches){
+    tl.fromTo(".front-page",
+    {clipPath: "circle(20%)"},
+    {clipPath: "circle(75%)", duration: 3 }
+    );
+    tl.fromTo('.music-note', {scale: 0.5}, {scale: 0, opacity: 0, duration: 1 ,}, "-=3"
+    );
+    
+    tl.fromTo('.content', {opacity: 0 }, {opacity: 1, duration: 1 });
+    tl.fromTo('.nav-effect', {opacity: 0 }, {opacity: 1, duration: 1 });
+}else{
+    tl.fromTo(".front-page",
+    {clipPath: "circle(5%)"},
+    {clipPath: "circle(75%)", duration: 3 }
+    );
+    tl.fromTo('.music-note', {scale: 0.5}, {scale: 0, opacity: 0, duration: 1 ,}, "-=3"
+    );
+    
+    tl.fromTo('.content', {opacity: 0 }, {opacity: 1, duration: 1 });
+    tl.fromTo('.nav-effect', {opacity: 0 }, {opacity: 1, duration: 1 });
+}
 
 
 
@@ -55,3 +67,17 @@ function formatTime(time){
 countdown();
 
 setInterval(countdown, 1000)
+
+
+const secondPage = document.querySelector('.second-page')
+const topSecondPage = secondPage.offsetTop;
+console.log(topSecondPage)
+
+// NAV-BAR CHANGE COLOR
+document.addEventListener("DOMContentLoaded", function(){
+    window.addEventListener("scroll", function(){
+        if (window.scrollY > topSecondPage + 300){
+            this.document.getElementById("navmenu").classList.add("bg-black");
+        }
+    })
+})
