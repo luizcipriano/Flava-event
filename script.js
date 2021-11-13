@@ -32,27 +32,22 @@ if (window.matchMedia("(max-width: 990px)").matches){
 
 
 
-// TIME TO START
+// TIMER
 const daysEl = document.getElementById('days')
 const hoursEl = document.getElementById('hours');
 const minsEl = document.getElementById('mins');
 const secondsEl = document.getElementById('seconds');
-
-
 
 const myBirth = '12 Jan 2022';
 
 function countdown(){
     const myBirthday = new Date(myBirth);
     const currentDate = new Date();
-
     const totalSeconds = (myBirthday - currentDate) / 1000;
-
     const days = Math.floor(totalSeconds / 3600 / 24)
     const hours = Math.floor(totalSeconds/ 3600) % 24;
     const mins = Math.floor(totalSeconds / 60) % 60;
     const seconds = Math.floor(totalSeconds) % 60;
-
     daysEl.innerHTML = days;
     hoursEl.innerHTML = formatTime(hours);
     minsEl.innerHTML = formatTime(mins);
@@ -65,15 +60,13 @@ function formatTime(time){
 
 // initial call
 countdown();
-
 setInterval(countdown, 1000)
 
 
+// NAV-BAR CHANGE COLOR
 const secondPage = document.querySelector('.second-page')
 const topSecondPage = secondPage.offsetTop;
 console.log(topSecondPage)
-
-// NAV-BAR CHANGE COLOR
 document.addEventListener("DOMContentLoaded", function(){
     window.addEventListener("scroll", function(){
         if (window.scrollY > topSecondPage + 300){
@@ -81,3 +74,44 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     })
 })
+
+// SLIDER 
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            centeredSlides: true,
+            centeredSlidesBounds: true,
+          },
+        480: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            centeredSlides: true,
+            centeredSlidesBounds: true,
+
+          },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        }
+      },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+  });
+  
