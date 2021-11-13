@@ -98,15 +98,12 @@ var swiper = new Swiper(".mySwiper", {
           },
         640: {
           slidesPerView: 1,
-          spaceBetween: 30,
         },
         768: {
-          slidesPerView: 3,
-          spaceBetween: 30,
+          slidesPerView: 1,
         },
         1024: {
           slidesPerView: 3,
-          spaceBetween: 30,
         }
       },
     navigation: {

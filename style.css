@@ -197,4 +197,7 @@ u {
   .sub-title {
     font-size: 1rem;
   }
+  .swiper {
+    width: 250px !important;
+  }
 }
