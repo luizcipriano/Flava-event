@@ -156,4 +156,14 @@ u {
     margin-top: 0;
   }
 }
-/* @media (max) */
+@media (max-width: 990px) {
+  .intro-text {
+    width: 100%;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .sub-title {
+    font-size: 1rem;
+  }
+}
