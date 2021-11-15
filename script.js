@@ -70,7 +70,7 @@ console.log(topSecondPage)
 document.addEventListener("DOMContentLoaded", function(){
     window.addEventListener("scroll", function(){
         if (window.scrollY > topSecondPage + 300){
-            this.document.getElementById("navmenu").classList.add("bg-black");
+            this.document.getElementById("navmenu").classList.add("bg-secondary-black");
         }
     })
 })
@@ -79,9 +79,8 @@ document.addEventListener("DOMContentLoaded", function(){
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
-    slidesPerGroup: 3,
+    slidesPerGroup: 1,
     loop: true,
-    loopFillGroupWithBlank: true,
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -107,8 +106,42 @@ var swiper = new Swiper(".mySwiper", {
         }
       },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      nextEl: ".swiper-button-next-unique",
+      prevEl: ".swiper-button-prev-unique"
     },
   });
   
+  var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 6,
+    spaceBetween: 22,
+    slidesPerGroup: 3,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 10,
+            centeredSlides: true,
+            centeredSlidesBounds: true,
+          },
+        480: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            centeredSlides: true,
+            centeredSlidesBounds: true,
+          },
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        }
+      },
+  });

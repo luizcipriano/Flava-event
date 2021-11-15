@@ -24,7 +24,7 @@
       </button>
       <div class="collapse navbar-collapse" id="main_nav">
         <ul class="navbar-nav justify-content-evenly w-75">
-          <li class="nav-item active"> <a class="nav-link on-page fs-5 text-white" href="#">Home </a> </li>
+          <li class="nav-item active"> <a class="nav-link on-page fs-5 text-white" href="#">HOME </a> </li>
           <li class="nav-item"><a class="nav-link fs-5 text-white" href="#"> LINE UP </a></li>
           <li class="nav-item"><a class="nav-link fs-5 text-white" href="#"> TICKET </a></li>
           <li class="nav-item"><a class="nav-link fs-5 text-white" href="#"> SCHEDULE </a></li>
@@ -62,8 +62,14 @@
     <video src="./video-music.mp4" muted playsinline autoplay="true" loop></video>
   </div>
   <div class="second-page">
-    <div>
-      <h1 class="text-center main-color fs-1 fw-bold mt-5">MUSIC FESTIVAL START IN</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="position-relative">
+            <h1 class="text-center main-color fs-1 fw-bold mt-5">MUSIC FESTIVAL START IN</h1>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="countdown-container text-white mt-5 mb-5">
       <div class="countdown-el days-c">
@@ -87,25 +93,151 @@
       <a href="#" class="btn-buy mt-5">BUY TICKET</a>
     </div>
 
-    <div class="container mb-5">
-      <h1 class="text-center main-color mb-5 fw-bold">THE LINEUP OF FLAFA</h1>
+    <div class="container mb-5 container-slider-1">
+      <div class="row">
+        <div class="col-12 position-relative">
+          <h1 class="text-center main-color mb-5 fw-bold">THE LINEUP OF FLAFA</h1>
+          <div class="swiper-button-next-unique ms-5"></div>
+          <div class="swiper-button-prev-unique me-2"></div>
+        </div>
+      </div>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"> <img src="./img/artista-1.png" alt="artista-1"></div>
-          <div class="swiper-slide"><img src="./img/artista-2.png" alt="artista-2"></div>
-          <div class="swiper-slide"><img src="./img/artista-3.png" alt="artista-3"></div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide slider-artistas">
+            <figure class="m-0 position-relative">
+              <img src="./img/artista-1.png" alt="artista-1">
+              <figcaption class="legenda position-absolute bottom-0 w-100">
+                RAYUL
+              </figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide slider-artistas">
+            <figure class="m-0 position-relative">
+              <img src="./img/artista-2.png" alt="artista-2">
+              <figcaption class="legenda position-absolute bottom-0 w-100">
+                ATIKH BANA
+              </figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide slider-artistas">
+            <figure class="m-0 position-relative">
+              <img src="./img/artista-3.png" alt="artista-3">
+              <figcaption class="legenda position-absolute bottom-0 w-100">
+                RAFAELLA
+              </figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide slider-artistas">
+            <figure class="m-0 position-relative w-100 h-100">
+              <img src="./img/artista-4.jpg" alt="artista-3">
+              <figcaption class="legenda position-absolute bottom-0 w-100">
+                NATHAN
+              </figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide slider-artistas">
+            <figure class="m-0 position-relative w-100 h-100">
+              <img src="./img/artista-5.jpg" alt="artista-3">
+              <figcaption class="legenda position-absolute bottom-0 w-100">
+                LUKE
+              </figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide slider-artistas">
+            <figure class="m-0 position-relative w-100 h-100">
+              <img src="./img/artista-6.jpg" alt="artista-3">
+              <figcaption class="legenda position-absolute bottom-0 w-100">
+                JACK
+              </figcaption>
+            </figure>
+          </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
       </div>
 
+
+    </div>
+    <div class="container mb-5">
+      <h1 class="text-center main-color mb-5 fw-bold">SPONSORS</h1>
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slider-patron"> <span> <img src="./img/logos/Etrade 亿创理财.png" alt=""> </span> </div>
+          <div class="swiper-slide slider-patron"> <span> <img src="./img/logos/Frame.png" alt=""> </span> </div>
+          <div class="swiper-slide slider-patron"> <span> <img src="./img/logos/Lexmark 利盟.png" alt=""> </span> </div>
+          <div class="swiper-slide slider-patron"><span> <img src="./img/logos/Microsoft.png" alt=""> </span> </div>
+          <div class="swiper-slide slider-patron"><span> <img src="./img/logos/Union.png" alt=""> </span></div>
+          <div class="swiper-slide slider-patron"> <span> <img src="./img/logos/Vector.png" alt=""> </span> </div>
+          <div class="swiper-slide slider-patron"> <span> <img src="./img/logos/Walmart.png" alt=""> </span> </div>
+          <div class="swiper-slide slider-patron"> <span> <img src="./img/logos/Etrade 亿创理财.png" alt=""> </span> </div>
+          <div class="swiper-slide slider-patron"> <span> <img src="./img/logos/Frame.png" alt=""> </span> </div>
+          <div class="swiper-slide slider-patron"> <span> <img src="./img/logos/Lexmark 利盟.png" alt=""> </span> </div>
+          <div class="swiper-slide slider-patron"><span> <img src="./img/logos/Microsoft.png" alt=""> </span> </div>
+          <div class="swiper-slide slider-patron"><span> <img src="./img/logos/Union.png" alt=""> </span></div>
+          <div class="swiper-slide slider-patron"> <span> <img src="./img/logos/Vector.png" alt=""> </span> </div>
+          <div class="swiper-slide slider-patron"> <span> <img src="./img/logos/Walmart.png" alt=""> </span> </div>
+        </div>
+        <div class="swiper-pagination bullet-slider-2"></div>
+      </div>
     </div>
     <div class="container">
-      <h1 class="text-center main-color mb-5 fw-bold">SPONSORS</h1>
+      <div class="row mb-5 mt-5">
+        <div class="col-md-6 col-12">
+          <div>
+            <p class="text-white fs-4 font-roboto m-0">Phone</p>
+            <p class="on-page fs-4 font-roboto">55 21 97364-8686</p>
+          </div>
+          <div>
+            <p class="text-white fs-4 font-roboto m-0">Email</p>
+            <p class="on-page  fs-4 font-roboto">flavamusicfest@mail.com</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <h2 class="text-white fs-4 font-roboto">Keep in Touch</h2>
+          <form class="form-email" action="get">
+            <input class="email-input" placeholder="Your Email" type="email">
+            <button class="font-roboto btn-sub">Subscribe</button>
+          </form>
+          <div class="d-flex">
+            <a target="_blank" href="https://www.instagram.com/">
+              <span class="icone instagram my-3 me-md-3 me-1">
+                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.2031 29H6.79688C3.04908 29 0 25.9509 0 22.2031V6.79688C0 3.04908 3.04908 0 6.79688 0H22.2031C25.9509 0 29 3.04908 29 6.79688V22.2031C29 25.9509 25.9509 29 22.2031 29ZM6.79688 2.26562C4.29834 2.26562 2.26562 4.29834 2.26562 6.79688V22.2031C2.26562 24.7017 4.29834 26.7344 6.79688 26.7344H22.2031C24.7017 26.7344 26.7344 24.7017 26.7344 22.2031V6.79688C26.7344 4.29834 24.7017 2.26562 22.2031 2.26562H6.79688ZM22.4863 5.09766C21.7043 5.09766 21.0703 5.73163 21.0703 6.51367C21.0703 7.29571 21.7043 7.92969 22.4863 7.92969C23.2684 7.92969 23.9023 7.29571 23.9023 6.51367C23.9023 5.73163 23.2684 5.09766 22.4863 5.09766ZM14.5 21.8633C10.4398 21.8633 7.13672 18.5602 7.13672 14.5C7.54113 4.73159 21.4603 4.73442 21.8633 14.5001C21.8633 18.5602 18.5602 21.8633 14.5 21.8633ZM14.5 9.40234C11.6892 9.40234 9.40234 11.6892 9.40234 14.5C9.68237 21.2627 19.3186 21.2607 19.5977 14.4999C19.5977 11.6892 17.3108 9.40234 14.5 9.40234Z" fill="#121212" />
+                </svg>
+              </span>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/">
+              <span class="icone youtube my-3 mx-3">
+                <svg width="29" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.9637 10.1967L12.5569 6.6912C12.1885 6.48964 11.7531 6.49716 11.392 6.71111C11.0307 6.92528 10.8152 7.30362 10.8152 7.72356V14.6744C10.8152 15.0924 11.0294 15.47 11.3882 15.6844C11.5756 15.7964 11.7834 15.8526 11.9916 15.8526C12.1823 15.8526 12.3735 15.8055 12.5494 15.7108L18.9564 12.2657C19.3367 12.061 19.5741 11.6656 19.5759 11.2335C19.5774 10.8014 19.3429 10.4043 18.9637 10.1967ZM12.5146 13.8V8.60503L17.3029 11.2251L12.5146 13.8Z" fill="#121212" />
+                  <path d="M28.7866 5.69588L28.7853 5.68261C28.7607 5.44919 28.5162 3.37296 27.5069 2.31692C26.3402 1.07481 25.0176 0.923912 24.3815 0.851562C24.3288 0.845589 24.2806 0.840057 24.2374 0.834305L24.1868 0.828995C20.3529 0.550217 14.563 0.512161 14.505 0.51194L14.4999 0.511719L14.4949 0.51194C14.4369 0.512161 8.64695 0.550217 4.77859 0.828995L4.72748 0.834305C4.68633 0.839836 4.64097 0.844925 4.59163 0.850677C3.96284 0.923248 2.65436 1.07436 1.48438 2.36139C0.523039 3.40614 0.245147 5.4379 0.216605 5.66624L0.213287 5.69588C0.204658 5.79301 0 8.10532 0 10.4267V12.5967C0 14.9181 0.204658 17.2304 0.213287 17.3278L0.214835 17.3424C0.239394 17.5721 0.483656 19.6102 1.48836 20.6667C2.58532 21.8672 3.97235 22.0261 4.71841 22.1115C4.83634 22.125 4.93789 22.1365 5.00714 22.1487L5.07418 22.158C7.28781 22.3686 14.2282 22.4724 14.5225 22.4766L14.5314 22.4768L14.5402 22.4766C14.5982 22.4763 20.3879 22.4383 24.2217 22.1595L24.2724 22.1542C24.3209 22.1478 24.3753 22.142 24.435 22.1358C25.0603 22.0695 26.3617 21.9316 27.5155 20.6621C28.4768 19.6171 28.755 17.5853 28.7833 17.3572L28.7866 17.3276C28.7952 17.2302 29.0001 14.9181 29.0001 12.5967V10.4267C28.9999 8.10532 28.7952 5.79324 28.7866 5.69588ZM27.3005 12.5967C27.3005 14.7453 27.1128 16.9581 27.0951 17.1612C27.023 17.7207 26.7298 19.0062 26.2615 19.5153C25.5393 20.3098 24.7974 20.3886 24.2558 20.4459C24.1903 20.4528 24.1297 20.4594 24.0748 20.4663C20.3666 20.7344 14.7953 20.7756 14.5387 20.7771C14.2508 20.7729 7.41193 20.6683 5.26579 20.4689C5.15583 20.451 5.03701 20.4373 4.91178 20.4231C4.27657 20.3503 3.40705 20.2508 2.73843 19.5153L2.72272 19.4985C2.26252 19.019 1.97777 17.817 1.90542 17.1678C1.89192 17.0143 1.69943 14.7754 1.69943 12.5967V10.4267C1.69943 8.28056 1.88661 6.07024 1.90475 5.86293C1.99082 5.20382 2.28951 3.99622 2.73843 3.50814C3.48272 2.68951 4.2675 2.59879 4.78656 2.53883C4.83612 2.53308 4.88236 2.52777 4.92506 2.52224C8.68722 2.25275 14.2986 2.21271 14.4999 2.21116C14.7013 2.21249 20.3107 2.25275 24.0394 2.52224C24.0852 2.52799 24.1352 2.53374 24.189 2.53994C24.7229 2.60078 25.5298 2.69283 26.2703 3.4827L26.2772 3.49C26.7374 3.96945 27.0221 5.19254 27.0945 5.85474C27.1073 5.99966 27.3005 8.24339 27.3005 10.4267V12.5967Z" fill="#121212" />
+                </svg>
+              </span>
+            </a>
+            <a target="_blank" href="https://www.tiktok.com/pt-BR//">
+              <span class="icone tiktok my-3 mx-md-3 mx-1">
+                <svg width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.39813 29C7.28714 29 5.29622 28.3265 3.64061 27.0521C3.33136 26.8142 3.03399 26.5543 2.75645 26.2801C0.823875 24.3702 -0.148644 21.8265 0.0184454 19.1173C0.144754 17.0698 0.969442 15.0959 2.34184 13.5592C4.15944 11.5241 6.66522 10.4032 9.3987 10.4032C9.86825 10.4032 10.3423 10.4383 10.8091 10.5074L11.5341 10.615V17.0488L10.4177 16.6801C10.0925 16.5725 9.7544 16.5181 9.41229 16.5181C8.54796 16.5181 7.73856 16.8568 7.13307 17.4714C6.53042 18.0831 6.20587 18.8919 6.21833 19.75C6.23475 20.8562 6.81759 21.8588 7.77708 22.4331C8.21888 22.697 8.72184 22.8517 9.23274 22.88C9.63602 22.9021 10.0342 22.8494 10.4171 22.7231C11.7261 22.2909 12.6057 21.0765 12.6057 19.7019L12.6114 13.0296V0H18.7603L18.7676 0.84168C18.771 1.22287 18.8101 1.60406 18.8837 1.97336C19.1726 3.42562 19.9871 4.71986 21.1771 5.61705C22.2335 6.41398 23.4943 6.83482 24.8219 6.83482C24.8531 6.83482 24.8531 6.83482 25.1369 6.85465L25.927 6.91016V12.1211V12.9707L25.6438 12.9701H25.0791C25.0746 12.9701 25.07 12.9701 25.0649 12.9701H24.7936C24.7925 12.9701 24.7908 12.9701 24.7891 12.9701C23.1516 12.9701 21.6172 12.658 20.0964 12.0163C19.6433 11.8249 19.2021 11.6062 18.7761 11.3621L18.7954 19.7342C18.7852 22.2105 17.8064 24.5333 16.0398 26.2796C14.6062 27.6961 12.7971 28.6012 10.8079 28.8958C10.344 28.9649 9.86995 29 9.39813 29ZM9.39813 12.1024C7.15573 12.1024 5.09968 13.0217 3.60889 14.6909C2.48968 15.9443 1.81679 17.5535 1.7137 19.2216C1.57776 21.4334 2.37186 23.511 3.95044 25.0708C4.1787 25.2963 4.42282 25.5098 4.67657 25.7052C6.03255 26.7491 7.6655 27.3008 9.39813 27.3008C9.78669 27.3008 10.1769 27.2719 10.5593 27.2153C12.1888 26.974 13.6711 26.2325 14.8458 25.0714C16.289 23.6452 17.0882 21.7494 17.0967 19.733L17.0701 8.04297L18.4425 9.10158C19.1511 9.64816 19.9305 10.1024 20.758 10.4519C21.8891 10.9294 23.0293 11.1945 24.2272 11.2573V8.51309C22.7466 8.40207 21.3482 7.87588 20.1536 6.97473C18.63 5.82605 17.5872 4.16762 17.2168 2.30584C17.1772 2.1059 17.1449 1.90369 17.1211 1.69979H14.31V13.0302L14.3043 19.7024C14.3043 21.8112 12.9563 23.6735 10.9495 24.3362C10.3644 24.5294 9.75554 24.6098 9.13929 24.5764C8.35425 24.5333 7.58167 24.296 6.90425 23.891C5.43555 23.0125 4.54347 21.4736 4.51854 19.7749C4.49929 18.4586 4.99716 17.2171 5.92153 16.2785C6.84874 15.3371 8.08804 14.8189 9.41116 14.8189C9.55276 14.8189 9.69323 14.8251 9.8337 14.837V12.1143C9.6887 12.1064 9.54313 12.1024 9.39813 12.1024Z" fill="black" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer bg-primary">
+      <div class="container">
+        <div class="row row-footer">
+          <div class="col-md-6 col-12 my-2">
+            <div>
+              <p class="color-secondary m-0 font-roboto">Copyright © 2021 • Flava - Music Festival</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div>
+              <p class="color-secondary m-0 font-roboto">Terms & Conditions for Event • Privacy Policy • Terms of Use</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

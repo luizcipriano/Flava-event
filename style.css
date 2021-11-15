@@ -16,11 +16,20 @@
   background-size: contain;
 } */
 body {
-  background: rgb(0, 0, 0);
+  background: #121212;
 }
 u {
   text-decoration-color: #feba08;
   text-decoration-style: wavy;
+}
+.bg-secondary-black {
+  background: #121212 !important;
+}
+.bg-primary {
+  background: #feba08 !important;
+}
+.color-secondary {
+  color: #121212;
 }
 .font-roboto {
   font-family: "Roboto", sans-serif;
@@ -104,19 +113,33 @@ u {
   outline-width: 8px;
   outline-offset: -8px;
 }
+.dropdown-menu {
+  background: #121212;
+}
+.dropdown-item {
+  color: #fff;
+  transition: background 200ms ease, color 200ms ease;
+}
 /* SECOND_PAGE */
 .second-page {
   position: relative;
 }
 .btn-buy {
   text-decoration: none;
-  color: #000;
+  color: #121212;
   padding: 15px 25px;
   background: #feba08;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   border: 2px solid #feba08;
   transition: background 200ms ease, color 200ms ease;
+}
+.legenda {
+  height: 15%;
+  background: #121212a4;
+  padding-top: 5%;
+  color: #feba08;
+  font-weight: bold;
 }
 .btn-buy:hover,
 .btn-buy:focus {
@@ -143,25 +166,47 @@ u {
 .countdown-el span {
   font-size: 1.3rem;
 }
-@media all and (min-width: 992px) {
-  .navbar .nav-item .dropdown-menu {
-    display: none;
-  }
-  .navbar .nav-item:hover .nav-link {
-  }
-  .navbar .nav-item:hover .dropdown-menu {
-    display: block;
-  }
-  .navbar .nav-item .dropdown-menu {
-    margin-top: 0;
-  }
+/* FOOTER */
+.icone {
+  height: 50px;
+  width: 50px;
+  background: #feba08;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row-footer {
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-email {
+  position: relative;
+}
+.email-input {
+  height: 50px;
+  position: relative;
+  padding-left: 1rem;
+}
+.email-input:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.btn-sub {
+  position: absolute;
+  height: 50px;
+  width: 120px;
+  right: 0;
+  border: none;
+  background: #feba08;
 }
 /* SLIDER  */
-.swiper {
+.mySwiper {
   max-width: 810px;
   height: 350px;
 }
-.swiper-slide {
+.slider-artistas {
   width: 250px !important;
   text-align: center;
   font-size: 18px;
@@ -181,11 +226,67 @@ u {
   align-items: center;
 }
 
-.swiper-slide img {
+.slider-artistas img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.mySwiper2 {
+  width: 1160px;
+  height: 90px;
+}
+.slider-patron {
+  width: 175px !important;
+  height: 85px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-patron span {
+  width: 175px;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-patron img {
+  width: 180px;
+}
+.navbar-dark .navbar-toggler-icon {
+  background: url(./img/text_align_right.png) no-repeat;
+  background-size: 35px 23px;
+}
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+.container-slider-1 {
+  position: relative;
+}
+.swiper-button-next-unique,
+.swiper-button-prev-unique {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.swiper-button-next-unique {
+  background: url(./img/arrow-right.png) no-repeat center;
+  right: 19%;
+}
+.swiper-button-prev-unique {
+  background: url(./img/arrow-left.png) no-repeat center;
+  right: 21%;
+}
+.swiper-pagination-bullet-active {
+  background: #feba08 !important;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -4px;
 }
 @media (max-width: 990px) {
   .intro-text {
@@ -197,7 +298,45 @@ u {
   .sub-title {
     font-size: 1rem;
   }
-  .swiper {
+  .mySwiper {
     width: 250px !important;
+  }
+  .mySwiper2 {
+    width: 350px !important;
+  }
+  .slider-patron img {
+    width: 150px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: -4px;
+  }
+
+  .row-footer {
+    height: auto;
+    text-align: center;
+  }
+  .swiper-button-prev-unique {
+    top: 40px;
+    left: 43%;
+  }
+  .swiper-button-next-unique {
+    top: 40px;
+    left: 43%;
+  }
+}
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .nav-link {
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
   }
 }
