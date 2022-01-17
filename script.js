@@ -38,7 +38,7 @@ const hoursEl = document.getElementById('hours');
 const minsEl = document.getElementById('mins');
 const secondsEl = document.getElementById('seconds');
 
-const myBirth = '12 Jan 2022';
+const myBirth = '30 Jan 2022';
 
 function countdown(){
     const myBirthday = new Date(myBirth);
